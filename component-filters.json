@@ -15,8 +15,7 @@
       "hero",
       "cards",
       "columns",
-      "fragment",
-      "main-header"
+      "fragment"
     ]
   },
   {
@@ -38,18 +37,6 @@
       "image",
       "button",
       "title"
-    ]
-  },
-  {
-    "id": "main-header",
-    "components": [
-      "main-header-nav-item"
-    ]
-  },
-  {
-    "id": "main-header-nav-item",
-    "components": [
-      "main-header-nav-sub-item"
     ]
   }
 ]
