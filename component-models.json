@@ -214,5 +214,128 @@
         "valueType": "string"
       }
     ]
+  },
+  {
+    "id": "main-header",
+    "fields": [
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "logoImage",
+        "label": "Logo Image",
+        "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "logoAlt",
+        "label": "Logo Alt Text",
+        "value": "St. Jude Children's Research Hospital"
+      },
+      {
+        "component": "aem-content",
+        "name": "logoLink",
+        "label": "Logo Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "searchPlaceholder",
+        "label": "Search Placeholder",
+        "value": "Search"
+      },
+      {
+        "component": "aem-content",
+        "name": "referLink",
+        "label": "Refer a Patient Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "referText",
+        "label": "Refer a Patient Text",
+        "value": "Refer a Patient"
+      },
+      {
+        "component": "aem-content",
+        "name": "donateLink",
+        "label": "Donate Now Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "donateText",
+        "label": "Donate Now Text",
+        "value": "Donate Now"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "utility1Text",
+        "label": "Utility Link 1 Text",
+        "value": "Careers"
+      },
+      {
+        "component": "aem-content",
+        "name": "utility1Link",
+        "label": "Utility Link 1 URL"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "utility2Text",
+        "label": "Utility Link 2 Text",
+        "value": "Contact Us"
+      },
+      {
+        "component": "aem-content",
+        "name": "utility2Link",
+        "label": "Utility Link 2 URL"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "langText",
+        "label": "Language Link Text",
+        "value": "Español"
+      },
+      {
+        "component": "aem-content",
+        "name": "langLink",
+        "label": "Language Link URL"
+      }
+    ]
+  },
+  {
+    "id": "main-header-nav-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "navLabel",
+        "label": "Navigation Label"
+      },
+      {
+        "component": "aem-content",
+        "name": "navLink",
+        "label": "Navigation Link"
+      }
+    ]
+  },
+  {
+    "id": "main-header-nav-sub-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "subNavLabel",
+        "label": "Sub Navigation Label"
+      },
+      {
+        "component": "aem-content",
+        "name": "subNavLink",
+        "label": "Sub Navigation Link"
+      }
+    ]
   }
 ]
