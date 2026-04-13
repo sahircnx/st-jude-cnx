@@ -1,0 +1,123 @@
+.mission-cards {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 32px;
+    box-sizing: border-box;
+}
+
+/* Section heading */
+.mission-cards-heading {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Card grid */
+.mission-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* Card link wrapper */
+.mission-cards a.mission-card-link,
+.mission-cards a.mission-card-link:hover,
+.mission-cards a.mission-card-link:visited,
+.mission-cards a.mission-card-link:focus,
+.mission-cards a.mission-card-link:active {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Card */
+.mission-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgb(0 0 0 / 8%);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: box-shadow 0.2s ease;
+}
+
+/* Card image */
+.mission-card-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.mission-card-image picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.mission-card-image img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: cover;
+    display: block;
+}
+
+/* Card body */
+.mission-card-body {
+    padding: 24px 28px;
+    flex: 1;
+}
+
+/* Card heading */
+.mission-card-heading {
+    color: #135cb0;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0 0 12px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Hover state */
+.mission-card-link:hover .mission-card {
+    box-shadow: 0 6px 24px rgb(0 0 0 / 15%);
+}
+
+.mission-card-link:hover .mission-card-heading {
+    text-decoration: underline;
+}
+
+/* Card description */
+.mission-card-description {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Tablet: 2 columns */
+@media (width <=900px) and (width >=600px) {
+    .mission-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile: 1 column */
+@media (width <=599px) {
+    .mission-cards {
+        padding: 40px 16px;
+    }
+
+    .mission-cards-heading {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+
+    .mission-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -15,7 +15,15 @@
       "hero",
       "cards",
       "columns",
-      "fragment"
+      "fragment",
+      "main-header",
+      "hero-banner",
+      "feature-cards",
+      "story-carousel",
+      "news-list",
+      "global-banner",
+      "mission-cards",
+      "main-footer"
     ]
   },
   {
@@ -37,6 +45,42 @@
       "image",
       "button",
       "title"
+    ]
+  },
+  {
+    "id": "feature-cards",
+    "components": [
+      "feature-card"
+    ]
+  },
+  {
+    "id": "main-header",
+    "components": [
+      "main-header-nav-item"
+    ]
+  },
+  {
+    "id": "main-header-nav-item",
+    "components": [
+      "main-header-nav-sub-item"
+    ]
+  },
+  {
+    "id": "mission-cards",
+    "components": [
+      "mission-card"
+    ]
+  },
+  {
+    "id": "news-list",
+    "components": [
+      "news-column"
+    ]
+  },
+  {
+    "id": "story-carousel",
+    "components": [
+      "story-slide"
     ]
   }
 ]

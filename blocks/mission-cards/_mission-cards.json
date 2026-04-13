@@ -1,0 +1,92 @@
+{
+    "definitions": [
+        {
+            "title": "Mission Cards",
+            "id": "mission-cards",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Mission Cards",
+                            "filter": "mission-cards"
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "title": "Mission Card",
+            "id": "mission-card",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block/item",
+                        "template": {
+                            "name": "Mission Card",
+                            "model": "mission-card"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "mission-cards-heading",
+            "fields": [
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "heading",
+                    "label": "Section Heading",
+                    "value": "Join our mission"
+                }
+            ]
+        },
+        {
+            "id": "mission-card",
+            "fields": [
+                {
+                    "component": "reference",
+                    "valueType": "string",
+                    "name": "image",
+                    "label": "Image",
+                    "multi": false
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "imageAlt",
+                    "label": "Image Alt Text",
+                    "value": ""
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "heading",
+                    "label": "Heading"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "description",
+                    "label": "Description"
+                },
+                {
+                    "component": "aem-content",
+                    "name": "link",
+                    "label": "Link"
+                }
+            ]
+        }
+    ],
+    "filters": [
+        {
+            "id": "mission-cards",
+            "components": [
+                "mission-card"
+            ]
+        }
+    ]
+}

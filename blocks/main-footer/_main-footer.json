@@ -1,0 +1,62 @@
+{
+    "definitions": [
+        {
+            "title": "Main Footer",
+            "id": "main-footer",
+            "plugins": {
+                "xwalk": {
+                    "page": {
+                        "resourceType": "core/franklin/components/block/v1/block",
+                        "template": {
+                            "name": "Main Footer",
+                            "model": "main-footer"
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "models": [
+        {
+            "id": "main-footer",
+            "fields": [
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "tagline",
+                    "label": "Tagline",
+                    "value": "Finding cures. Saving children."
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "address",
+                    "label": "Address",
+                    "value": "262 Danny Thomas Place, Memphis, TN 38105"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "donorPhone",
+                    "label": "Donor Services Phone",
+                    "value": "(800) 822-6344"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "hospitalPhone",
+                    "label": "Hospital Phone",
+                    "value": "(866) 278-5833"
+                },
+                {
+                    "component": "text",
+                    "valueType": "string",
+                    "name": "copyright",
+                    "label": "Copyright Text",
+                    "value": "© Copyright 2026. St. Jude Children's Research Hospital, a not-for-profit, section 501(c)(3)."
+                }
+            ]
+        }
+    ],
+    "filters": []
+}
