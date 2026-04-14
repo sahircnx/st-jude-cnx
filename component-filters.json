@@ -18,7 +18,8 @@
       "fragment",
       "story-carousel",
       "globe-hero",
-      "read-our-stories"
+      "read-our-stories",
+      "promo-cards"
     ]
   },
   {
@@ -64,6 +65,12 @@
     "id": "read-our-stories",
     "components": [
       "read-our-stories-slide"
+    ]
+  },
+  {
+    "id": "promo-cards",
+    "components": [
+      "promo-card"
     ]
   }
 ]
