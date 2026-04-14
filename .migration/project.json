@@ -4,5 +4,6 @@
     "aemSitePath": "/content/st-jude-cnx",
     "aemAssetsFolderPath": "/content/dam/st-jude-cnx",
     "aemSiteName": "st-jude-cnx",
-    "aemSiteTitle": "st-jude-cnx"
+    "aemSiteTitle": "st-jude-cnx",
+    "baseUrl": "https://main--st-jude-cnx--sahircnx.aem.page"
 }
