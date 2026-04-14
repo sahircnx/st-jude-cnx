@@ -17,7 +17,8 @@
       "columns",
       "fragment",
       "story-carousel",
-      "globe-hero"
+      "globe-hero",
+      "read-our-stories"
     ]
   },
   {
@@ -57,6 +58,12 @@
     "id": "story-carousel",
     "components": [
       "story-slide"
+    ]
+  },
+  {
+    "id": "read-our-stories",
+    "components": [
+      "read-our-stories-slide"
     ]
   }
 ]
