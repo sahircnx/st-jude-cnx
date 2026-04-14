@@ -180,6 +180,18 @@
     ]
   },
   {
+    "id": "feature-cards",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Section Heading",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "feature-card",
     "fields": [
       {
@@ -541,7 +553,7 @@
     ]
   },
   {
-    "id": "mission-cards-heading",
+    "id": "mission-cards",
     "fields": [
       {
         "component": "text",
@@ -589,6 +601,18 @@
     ]
   },
   {
+    "id": "news-list",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "heading",
+        "label": "Section Title",
+        "value": ""
+      }
+    ]
+  },
+  {
     "id": "news-column",
     "fields": [
       {
@@ -612,7 +636,7 @@
     ]
   },
   {
-    "id": "story-carousel-heading",
+    "id": "story-carousel",
     "fields": [
       {
         "component": "text",
