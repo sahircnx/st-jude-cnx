@@ -1,0 +1,200 @@
+/* Section heading above the carousel */
+.section:has(.story-carousel)>div>h2 {
+    text-align: center;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+    margin: 36px 0 20px;
+}
+
+/* Story Carousel Block */
+.story-carousel {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 48px;
+}
+
+.story-carousel-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.story-carousel-track {
+    display: flex;
+    gap: 24px;
+    transition: transform 0.4s ease;
+}
+
+/* Each slide card */
+.story-carousel-slide {
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%),
+        0 1px 5px 0 rgb(0 0 0 / 12%),
+        0 3px 1px -2px rgb(0 0 0 / 20%);
+    background: #fff;
+}
+
+/* Image side */
+.story-carousel-image {
+    flex: 0 0 50%;
+    max-width: 50%;
+    line-height: 0;
+}
+
+.story-carousel-image picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.story-carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 8 / 5;
+}
+
+/* Content side */
+.story-carousel-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 24px;
+}
+
+.story-carousel-content h3 {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #135cb0;
+    margin: 0 0 12px;
+    line-height: 1.3;
+}
+
+.story-carousel-content p {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    line-height: 1.5;
+    margin: 0 0 4px;
+}
+
+.story-carousel-content em {
+    font-style: italic;
+    font-size: 14px;
+    color: #000;
+}
+
+/* CTA link */
+.story-carousel-cta {
+    margin-top: auto;
+    padding-top: 12px;
+}
+
+.story-carousel-cta a {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #135cb0;
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.story-carousel-cta a:hover {
+    color: #0e4a8a;
+    text-decoration: underline;
+}
+
+/* Navigation buttons */
+.story-carousel-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 56px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: #333;
+    padding: 0;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
+    transition: background 0.2s;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.story-carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 56px;
+    background: #fff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    color: #333;
+    padding: 0;
+    box-shadow: 0 1px 4px rgb(0 0 0 / 15%);
+    transition: background 0.2s;
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.story-carousel-prev:hover,
+.story-carousel-next:hover {
+    background: #f0f0f0;
+}
+
+.story-carousel-prev svg,
+.story-carousel-next svg {
+    width: 14px;
+    height: 24px;
+}
+
+/* Mobile responsive */
+@media (width <=768px) {
+    .story-carousel {
+        padding: 0 40px;
+    }
+
+    .story-carousel-slide {
+        flex-direction: column;
+    }
+
+    .story-carousel-image {
+        flex: 0 0 auto;
+        max-width: 100%;
+    }
+
+    .story-carousel-image img {
+        aspect-ratio: 16 / 9;
+    }
+
+    .story-carousel-content {
+        padding: 16px;
+    }
+
+    .story-carousel-content h3 {
+        font-size: 20px;
+    }
+
+    .story-carousel-prev,
+    .story-carousel-next {
+        width: 30px;
+        height: 48px;
+    }
+}

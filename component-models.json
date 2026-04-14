@@ -180,54 +180,6 @@
     ]
   },
   {
-    "id": "feature-cards",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "label": "Section Heading",
-        "value": ""
-      }
-    ]
-  },
-  {
-    "id": "feature-card",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image Alt Text",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "label": "Heading"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "description",
-        "label": "Description"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      }
-    ]
-  },
-  {
     "id": "fragment",
     "fields": [
       {
@@ -238,54 +190,125 @@
     ]
   },
   {
-    "id": "global-banner",
+    "id": "main-header",
     "fields": [
       {
         "component": "reference",
         "valueType": "string",
-        "name": "image",
-        "label": "Background Image",
+        "name": "logoImage",
+        "label": "Logo Image",
         "multi": false
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image Alt Text",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "title",
-        "label": "Title",
-        "value": "St. Jude Global"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "subtitle",
-        "label": "Subtitle",
-        "value": "Advancing global research"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "description",
-        "label": "Description",
-        "value": "We are innovating to transform outcomes for children worldwide."
+        "name": "logoAlt",
+        "label": "Logo Alt Text",
+        "value": "St. Jude Children's Research Hospital"
       },
       {
         "component": "aem-content",
-        "name": "ctaLink",
-        "label": "CTA Link"
+        "name": "logoLink",
+        "label": "Logo Link"
       },
       {
         "component": "text",
         "valueType": "string",
-        "name": "ctaText",
-        "label": "CTA Text",
-        "value": "Learn More"
+        "name": "searchPlaceholder",
+        "label": "Search Placeholder",
+        "value": "Search"
+      },
+      {
+        "component": "aem-content",
+        "name": "referLink",
+        "label": "Refer a Patient Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "referText",
+        "label": "Refer a Patient Text",
+        "value": "Refer a Patient"
+      },
+      {
+        "component": "aem-content",
+        "name": "donateLink",
+        "label": "Donate Now Link"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "donateText",
+        "label": "Donate Now Text",
+        "value": "Donate Now"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "utility1Text",
+        "label": "Utility Link 1 Text",
+        "value": "Careers"
+      },
+      {
+        "component": "aem-content",
+        "name": "utility1Link",
+        "label": "Utility Link 1 URL"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "utility2Text",
+        "label": "Utility Link 2 Text",
+        "value": "Contact Us"
+      },
+      {
+        "component": "aem-content",
+        "name": "utility2Link",
+        "label": "Utility Link 2 URL"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "langText",
+        "label": "Language Link Text",
+        "value": "Español"
+      },
+      {
+        "component": "aem-content",
+        "name": "langLink",
+        "label": "Language Link URL"
+      }
+    ]
+  },
+  {
+    "id": "main-header-nav-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "navLabel",
+        "label": "Navigation Label"
+      },
+      {
+        "component": "aem-content",
+        "name": "navLink",
+        "label": "Navigation Link"
+      }
+    ]
+  },
+  {
+    "id": "main-header-nav-sub-item",
+    "fields": [
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "subNavLabel",
+        "label": "Sub Navigation Label"
+      },
+      {
+        "component": "aem-content",
+        "name": "subNavLink",
+        "label": "Sub Navigation Link"
       }
     ]
   },
@@ -426,212 +449,6 @@
         "name": "copyright",
         "label": "Copyright Text",
         "value": "© Copyright 2026. St. Jude Children's Research Hospital, a not-for-profit, section 501(c)(3)."
-      }
-    ]
-  },
-  {
-    "id": "main-header",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "logoImage",
-        "label": "Logo Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "logoAlt",
-        "label": "Logo Alt Text",
-        "value": "St. Jude Children's Research Hospital"
-      },
-      {
-        "component": "aem-content",
-        "name": "logoLink",
-        "label": "Logo Link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "searchPlaceholder",
-        "label": "Search Placeholder",
-        "value": "Search"
-      },
-      {
-        "component": "aem-content",
-        "name": "referLink",
-        "label": "Refer a Patient Link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "referText",
-        "label": "Refer a Patient Text",
-        "value": "Refer a Patient"
-      },
-      {
-        "component": "aem-content",
-        "name": "donateLink",
-        "label": "Donate Now Link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "donateText",
-        "label": "Donate Now Text",
-        "value": "Donate Now"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "utility1Text",
-        "label": "Utility Link 1 Text",
-        "value": "Careers"
-      },
-      {
-        "component": "aem-content",
-        "name": "utility1Link",
-        "label": "Utility Link 1 URL"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "utility2Text",
-        "label": "Utility Link 2 Text",
-        "value": "Contact Us"
-      },
-      {
-        "component": "aem-content",
-        "name": "utility2Link",
-        "label": "Utility Link 2 URL"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "langText",
-        "label": "Language Link Text",
-        "value": "Español"
-      },
-      {
-        "component": "aem-content",
-        "name": "langLink",
-        "label": "Language Link URL"
-      }
-    ]
-  },
-  {
-    "id": "main-header-nav-item",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "navLabel",
-        "label": "Navigation Label"
-      },
-      {
-        "component": "aem-content",
-        "name": "navLink",
-        "label": "Navigation Link"
-      }
-    ]
-  },
-  {
-    "id": "main-header-nav-sub-item",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "subNavLabel",
-        "label": "Sub Navigation Label"
-      },
-      {
-        "component": "aem-content",
-        "name": "subNavLink",
-        "label": "Sub Navigation Link"
-      }
-    ]
-  },
-  {
-    "id": "mission-cards",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "label": "Section Heading",
-        "value": "Join our mission"
-      }
-    ]
-  },
-  {
-    "id": "mission-card",
-    "fields": [
-      {
-        "component": "reference",
-        "valueType": "string",
-        "name": "image",
-        "label": "Image",
-        "multi": false
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "imageAlt",
-        "label": "Image Alt Text",
-        "value": ""
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "label": "Heading"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "description",
-        "label": "Description"
-      },
-      {
-        "component": "aem-content",
-        "name": "link",
-        "label": "Link"
-      }
-    ]
-  },
-  {
-    "id": "news-list",
-    "fields": [
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "heading",
-        "label": "Section Title",
-        "value": ""
-      }
-    ]
-  },
-  {
-    "id": "news-column",
-    "fields": [
-      {
-        "component": "richtext",
-        "name": "content",
-        "value": "",
-        "label": "Column Content",
-        "valueType": "string"
-      },
-      {
-        "component": "aem-content",
-        "name": "bottomLink",
-        "label": "Bottom Link"
-      },
-      {
-        "component": "text",
-        "valueType": "string",
-        "name": "bottomLinkText",
-        "label": "Bottom Link Text"
       }
     ]
   },
