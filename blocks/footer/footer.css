@@ -1,20 +1,89 @@
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: #333;
+  /* Dark gray background as seen in design */
+  color: #fff;
+  font-family: var(--body-font-family);
+  font-size: 13px;
+  line-height: 1.6;
+  padding: 40px 0;
 }
 
-footer .footer > div {
-  margin: auto;
+footer .footer {
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
-footer .footer p {
+footer .footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+/* Copyright Section */
+footer .footer-container p:first-of-type {
+  color: #ccc;
+  /* Lighter gray for better visibility */
+  margin-bottom: 8px;
+}
+
+/* Main Link Lists */
+footer .footer-container ul {
+  list-style: none;
   margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+footer .footer-container li {
+  display: inline;
+}
+
+footer .footer-container a {
+  color: #fff;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+footer .footer-container a:hover {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* Language Assistance Message */
+footer .footer-container p:last-of-type {
+  /* max-width: 800px; */
+  color: #bbb;
+  margin: 16px 0;
+}
+
+/* Language Links Section */
+footer .footer-container .language-links .default-content-wrapper div {
+  text-align: center;
+}
+
+footer .footer-container .language-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+footer .footer-container .language-links a {
+  /* border-bottom: 1px solid #666; */
+  padding-bottom: 2px;
+}
+
+/* Mobile Adjustments */
+@media (width <=600px) {
+  footer .footer-container ul {
+    flex-direction: column;
+    gap: 8px;
   }
 }

@@ -13,8 +13,20 @@ export default async function decorate(block) {
 
   // decorate footer DOM
   block.textContent = '';
-  const footer = document.createElement('div');
-  while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
+  const footerContainer = document.createElement('div');
+  footerContainer.className = 'footer-container';
+  
+  while (fragment.firstElementChild) {
+    const section = fragment.firstElementChild;
+    // Identify and class the language links section if it's a list of links
+    const hasManyLanguages = section.textContent.includes('Español') || section.textContent.includes('中文');
+    if (section.querySelector('ul') && hasManyLanguages) {
+      section.className = 'language-links';
+    } else if (section.querySelector('ul')) {
+      section.className = 'legal-links';
+    }
+    footerContainer.append(section);
+  }
 
-  block.append(footer);
+  block.append(footerContainer);
 }
