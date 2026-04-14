@@ -1,0 +1,117 @@
+main .globe-hero {
+  display: flex;
+  flex-direction: column;
+  background-color: #E1E1E1; /* Light gray background from design */
+  overflow: hidden;
+  position: relative;
+  min-height: 400px;
+}
+
+main .globe-hero-text {
+  padding: 40px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  flex: 1;
+}
+
+main .globe-hero-eyebrow {
+  margin: 0 0 16px;
+  font-size: var(--body-font-size-s);
+  text-transform: none;
+  color: var(--dark-color);
+  font-weight: 500;
+}
+
+main .globe-hero-heading {
+  margin: 0 0 16px;
+  font-size: var(--heading-font-size-l);
+  line-height: 1.2;
+  color: var(--text-color);
+  font-weight: 400; /* Matching the regular weight in design */
+}
+
+main .globe-hero-description {
+  margin: 0 0 32px;
+  font-size: var(--body-font-size-m);
+  line-height: 1.6;
+  color: var(--dark-color);
+}
+
+main .globe-hero-cta {
+  display: inline-block;
+  background-color: #D81E4B; /* Specific red/pink from design */
+  color: white;
+  padding: 12px 32px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--body-font-size-s);
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main .globe-hero-cta:hover {
+  background-color: #B0183D;
+  text-decoration: none;
+  color: white;
+}
+
+main .globe-hero-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 300px;
+}
+
+main .globe-hero-image picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main .globe-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Fitting the globe scale */
+  object-position: right center;
+}
+
+/* Desktop and up */
+@media (width >= 900px) {
+  main .globe-hero {
+    flex-direction: row;
+    min-height: 500px;
+  }
+
+  main .globe-hero-text {
+    padding: 60px 80px;
+    flex: 0 0 50%; /* Left half */
+  }
+
+  main .globe-hero-image {
+    flex: 0 0 50%; /* Right half */
+    min-height: auto;
+  }
+
+  main .globe-hero-heading {
+    font-size: var(--heading-font-size-xxl);
+  }
+
+  main .globe-hero-image img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    transform: scale(1.4); /* Make the globe look clipped and large as in design */
+    transform-origin: center right;
+  }
+}
+
+/* High density screens / Large desktop */
+@media (width >= 1200px) {
+  main .globe-hero-text {
+    padding-left: calc((100vw - 1200px) / 2 + 80px);
+  }
+}
